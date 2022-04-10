@@ -1,0 +1,6 @@
+.header {
+    width: 100vw;
+    height: 8vh;
+    background-color: rgb(206, 206, 218);
+    border-bottom: 2px solid gray;
+}
