@@ -21,11 +21,18 @@ const Item = (props) => {
   return <div className={`square ${props.content}`}></div>;
 };
 const Memory = () => {
-  const one = colors.map((item) => <Item content={item} />);
+  const shuffleArray = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+      const index = Math.floor(Math.random() * (i + 1));
+      [array[i], array[index]] = [array[index], array[i]];
+    }
+  };
+  shuffleArray(colors);
+  const Card = colors.map((item) => <Item content={item} />);
   return (
     <div className="game">
       <h1>Memory!</h1>
-      <div className="table"> {one}</div>
+      <div className="table"> {Card}</div>
     </div>
   );
 };
