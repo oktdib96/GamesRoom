@@ -1,0 +1,50 @@
+.game {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.game h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.game .images {
+    display: flex;
+    width: 50vw;
+    justify-content: space-around;
+}
+.game .images img {
+    cursor: pointer;
+    border-radius: 50%;
+}
+.game .images .active {
+    box-shadow: 0px 0px 4px 4px rgb(145, 145, 146);;
+}
+.game button {
+    position: absolute;
+    left: 50%;
+    transform:translate(-50%);
+    margin-top: 40px;
+    padding: 10px 70px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: .3s;
+}
+.game button:hover {
+    background-color: rgb(206, 206, 218);
+}
+.game .leftPanel {
+    position: absolute;
+    left: -20%;
+    top: 150%;
+    font-size: 30px;
+}
+.game .rightPanel {
+    position: absolute;
+    right: -20%;
+    top: 150%;
+    font-size: 30px;
+}

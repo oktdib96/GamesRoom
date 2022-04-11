@@ -1,12 +1,36 @@
+import React, { useState } from "react";
 import Scissors from "../images/nozyczki.jpg";
 import Rock from "../images/kamien.jpg";
 import Paper from "../images/papier.jpg";
+import "../css/FirstGame.css";
 const FirstGame = () => {
+  const [userHand, setUserHand] = useState("");
+  const handleUserChoice = (choice) => {
+    setUserHand(choice);
+  };
   return (
     <div className="game">
-      <img src={Scissors} alt="scissors" />
-      <img src={Rock} alt="rock" />
-      <img src={Paper} alt="paper" />
+      <h1>Papier, kamień, nożyce!</h1>
+      <div className="images">
+        <img
+          className={userHand === "scissors" ? "active" : null}
+          src={Scissors}
+          alt="scissors"
+          onClick={() => handleUserChoice("scissors")}
+        />
+        <img
+          className={userHand === "rock" ? "active" : null}
+          src={Rock}
+          alt="rock"
+          onClick={() => handleUserChoice("rock")}
+        />
+        <img
+          className={userHand === "paper" ? "active" : null}
+          src={Paper}
+          alt="paper"
+          onClick={() => handleUserChoice("paper")}
+        />
+      </div>
       <button>Gramy!</button>
       <div className="leftPanel">
         <p>
