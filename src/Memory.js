@@ -1,4 +1,5 @@
-import "../css/Memory.css";
+import "./css/Memory.css";
+import Card from "./components/Card";
 const colors = [
   "blue",
   "blue",
@@ -17,9 +18,6 @@ const colors = [
   "beige",
   "beige",
 ];
-const Item = (props) => {
-  return <div className={`square ${props.content}`}></div>;
-};
 const Memory = () => {
   const shuffleArray = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
@@ -28,11 +26,11 @@ const Memory = () => {
     }
   };
   shuffleArray(colors);
-  const Card = colors.map((item) => <Item content={item} />);
+  const Cards = colors.map((item) => <Card content={item} />);
   return (
     <div className="game">
       <h1>Memory!</h1>
-      <div className="table"> {Card}</div>
+      <div className="table"> {Cards}</div>
     </div>
   );
 };

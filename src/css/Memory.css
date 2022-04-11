@@ -1,0 +1,79 @@
+h1 {
+    margin-top: 200px;
+}
+.table {
+    display: flex;
+    flex-wrap: wrap;
+}
+.blue {
+    width: 100px;
+    margin: 2px;
+    height: 200px;
+    border: 2px solid gray;
+    background-color: blue;
+    cursor: pointer;
+}
+.red {
+    width: 100px;
+    margin: 2px;
+    height: 200px;
+    border: 2px solid gray;
+    background-color:red;
+    cursor: pointer;
+}
+.green {
+    width: 100px;
+    margin: 2px;
+    height: 200px;
+    border: 2px solid gray;
+    background-color:green;
+    cursor: pointer;
+}
+.yellow {
+    width: 100px;
+    margin: 2px;
+    height: 200px;
+    border: 2px solid gray;
+    background-color:yellow;
+    cursor: pointer;
+}
+.pink {
+    width: 100px;
+    margin: 2px;
+    height: 200px;
+    border: 2px solid gray;
+    background-color:pink;
+    cursor: pointer;
+}
+.orange {
+    width: 100px;
+    margin: 2px;
+    height: 200px;
+    border: 2px solid gray;
+    background-color:orange;
+    cursor: pointer;
+}
+.aqua {
+    width: 100px;
+    margin: 2px;
+    height: 200px;
+    border: 2px solid gray;
+    background-color:aqua;
+    cursor: pointer;
+}
+.beige {
+    width: 100px;
+    margin: 2px;
+    height: 200px;
+    border: 2px solid gray;
+    background-color:beige;
+    cursor: pointer;
+}
+div.square {
+    width: 100px;
+    margin: 2px;
+    height: 200px;
+    border: 2px solid gray;
+    background-color:black;
+    cursor: pointer;
+}
