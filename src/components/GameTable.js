@@ -1,8 +1,9 @@
 import "../css/GameTable.css";
+import FirstGame from "./FirstGame";
 const GameTable = () => {
   return (
     <div className="gameTable">
-      <p>hello</p>
+      <FirstGame />
     </div>
   );
 };
