@@ -22,19 +22,19 @@ const FirstGame = () => {
       (userHand === "rock" && aiHand === "scissors") ||
       (userHand === "paper" && aiHand === "rock")
     ) {
-      setResult("win");
+      setResult("Wygrałeś!!!");
     } else if (
       (userHand === "scissors" && aiHand === "scissors") ||
       (userHand === "rock" && aiHand === "rock") ||
       (userHand === "paper" && aiHand === "paper")
     ) {
-      setResult("draw");
+      setResult("Remis");
     } else if (
       (userHand === "scissors" && aiHand === "rock") ||
       (userHand === "rock" && aiHand === "paper") ||
       (userHand === "paper" && aiHand === "scissors")
     ) {
-      setResult("lose");
+      setResult("Komputer był lepszy");
     }
     setUserHand("");
   };
@@ -62,22 +62,11 @@ const FirstGame = () => {
         />
       </div>
       <button onClick={handleStartGame}>Gramy!</button>
-      <div className="rightPanel">
-        <p>
+      <div className="result">
+        <h2>
           Zwycięzca: <br />
           <span>{result}</span>
-        </p>
-      </div>
-      <div className="leftPanel">
-        <p>
-          Ilość zwycięstw: <span></span>
-        </p>
-        <p>
-          Ilość remisów: <span></span>
-        </p>
-        <p>
-          Ilość przeganych: <span></span>
-        </p>
+        </h2>
       </div>
     </div>
   );

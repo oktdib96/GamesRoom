@@ -36,15 +36,16 @@
 .game button:hover {
     background-color: rgb(206, 206, 218);
 }
-.game .leftPanel {
+.result {
     position: absolute;
-    left: -20%;
-    top: 150%;
-    font-size: 30px;
+    left: 50%;
+    bottom: -120%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
-.game .rightPanel {
-    position: absolute;
-    right: -20%;
-    top: 150%;
-    font-size: 30px;
+.result h2 {
+    font-size: 50px;
+}
+.result h2 span {
+    color: green;
 }
